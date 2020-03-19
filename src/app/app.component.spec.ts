@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'afropolitan'`, () => {
+  it(`should have as title 'ng-wordpress-demo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('afropolitan');
+    expect(app.title).toEqual('ng-wordpress-demo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('afropolitan app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ng-wordpress-demo app is running!');
   });
 });
